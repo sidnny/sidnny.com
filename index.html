@@ -28,13 +28,9 @@
       justify-content: flex-start;
       flex-direction: column;
       min-height: 100vh;
-      color: #243645;
-      font-family: serif;
-      font-size: 14px;
-      font-weight: 400;
-      font-style: normal;
-      line-height: 1.2;
-      background: #032844;
+      color: #9dbcbd;
+      font: 14px/1.2 monospace;
+      background: linear-gradient(90deg, #032844 0%, #6e1385 100%);
     }
 
     .blur {
@@ -63,28 +59,278 @@
 
     #logo {
       opacity: .5;
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
+      position: fixed;
+      right: 20px;
+      bottom: 30px;
       margin: auto;
       width: 20%;
       max-width: 250px;
     }
 
-    #image {
+    section {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    section img {
+      display: block;
+      max-width: 50%;
+      flex: 1;
+      object-fit: cover;
+    }
+
+    #copyright {
+      color: #340b40;
+      position: fixed;
+      right: 20px;
+      bottom: 10px;
       margin: auto;
-      max-width: 100vw;
-      max-height: 100vh;
+    }
+
+
+    @media only screen and (min-width: 768px) {
+      section img {
+        max-width: 33.3333333%;
+      }
+    }
+    @media only screen and (min-width: 1024px) and (orientation: landscape) {
+      section img {
+        max-width: 25%;
+      }
     }
   </style>
 </head>
 
 <body>
   <img src="img/logo.png" alt="sidnny" id="logo">
-  <img src="img/sculpture.jpg" alt="sculpture" style="display: block;" id="image">
+  <section>
+    <img
+       srcset="
+        img/large/roses.jpg 1080w,
+        img/medium/roses.jpg 540w,
+        img/small/roses.jpg 360w,
+        img/tiny/roses.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/roses.jpg" alt="roses" />
+    <img
+       srcset="
+        img/large/sculpture.jpg 1080w,
+        img/medium/sculpture.jpg 540w,
+        img/small/sculpture.jpg 360w,
+        img/tiny/sculpture.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/sculpture.jpg" alt="sculpture" />
+    <img
+       srcset="
+        img/large/snail.jpg 1080w,
+        img/medium/snail.jpg 540w,
+        img/small/snail.jpg 360w,
+        img/tiny/snail.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/snail.jpg" alt="snail" />
+    <img
+       srcset="
+        img/large/palazzo.jpg 1080w,
+        img/medium/palazzo.jpg 540w,
+        img/small/palazzo.jpg 360w,
+        img/tiny/palazzo.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/palazzo.jpg" alt="palazzo" />
+    <img
+       srcset="
+        img/large/cherryblossoms.jpg 1080w,
+        img/medium/cherryblossoms.jpg 540w,
+        img/small/cherryblossoms.jpg 360w,
+        img/tiny/cherryblossoms.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/cherryblossoms.jpg" alt="cherryblossoms" />
+    <img
+       srcset="
+        img/large/beach.jpg 1080w,
+        img/medium/beach.jpg 540w,
+        img/small/beach.jpg 360w,
+        img/tiny/beach.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/beach.jpg" alt="beach" />
+    <img
+       srcset="
+        img/large/violin.jpg 1080w,
+        img/medium/violin.jpg 540w,
+        img/small/violin.jpg 360w,
+        img/tiny/violin.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/violin.jpg" alt="violin" />
+    <img
+       srcset="
+        img/large/sunset.jpg 1080w,
+        img/medium/sunset.jpg 540w,
+        img/small/sunset.jpg 360w,
+        img/tiny/sunset.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/sunset.jpg" alt="sunset" />
+    <img
+       srcset="
+        img/large/nofilter.jpg 1080w,
+        img/medium/nofilter.jpg 540w,
+        img/small/nofilter.jpg 360w,
+        img/tiny/nofilter.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/nofilter.jpg" alt="nofilter" />
+    <img
+       srcset="
+        img/large/backyard.jpg 1080w,
+        img/medium/backyard.jpg 540w,
+        img/small/backyard.jpg 360w,
+        img/tiny/backyard.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/backyard.jpg" alt="backyard" />
+    <img
+       srcset="
+        img/large/docks.jpg 1080w,
+        img/medium/docks.jpg 540w,
+        img/small/docks.jpg 360w,
+        img/tiny/docks.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/docks.jpg" alt="docks" />
+    <img
+       srcset="
+        img/large/irishmonument.jpg 1080w,
+        img/medium/irishmonument.jpg 540w,
+        img/small/irishmonument.jpg 360w,
+        img/tiny/irishmonument.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/irishmonument.jpg" alt="irishmonument" />
+    <img
+       srcset="
+        img/large/fidi.jpg 1080w,
+        img/medium/fidi.jpg 540w,
+        img/small/fidi.jpg 360w,
+        img/tiny/fidi.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/fidi.jpg" alt="fidi" />
+    <img
+       srcset="
+        img/large/subway.jpg 1080w,
+        img/medium/subway.jpg 540w,
+        img/small/subway.jpg 360w,
+        img/tiny/subway.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/subway.jpg" alt="subway" />
+    <img
+       srcset="
+        img/large/zillow.jpg 1080w,
+        img/medium/zillow.jpg 540w,
+        img/small/zillow.jpg 360w,
+        img/tiny/zillow.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/zillow.jpg" alt="zillow" />
+    <img
+       srcset="
+        img/large/glitch.jpg 1080w,
+        img/medium/glitch.jpg 540w,
+        img/small/glitch.jpg 360w,
+        img/tiny/glitch.jpg 270w
+       "
+      sizes="
+        (max-width: 425px) 270px,
+        (max-width: 1024px) 360px,
+        (max-width: 1280px) 540px,
+        1080px
+      "
+      src="img/tiny/glitch.jpg" alt="glitch" />
+  </section>
   <div class="blur" style="background: url('img/sculpture.jpg')"></div>
+  <p id="copyright">&copy;2019 sidnny</p>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7251028-2"></script>
@@ -94,6 +340,5 @@
     gtag('js', new Date());
     gtag('config', 'UA-7251028-2');
   </script>
-
 </body>
 </html>
